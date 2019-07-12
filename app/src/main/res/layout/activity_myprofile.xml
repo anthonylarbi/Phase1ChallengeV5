@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/mypix"
+        android:src="@drawable/mypix"
+        android:layout_width="218dp"
+        android:layout_height="191dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/Description"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypix"
+        android:layout_centerHorizontal="true"
+        android:text="@string/MyName" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/myname"
+        android:background="?android:attr/listDivider"
+        android:minHeight="23dp" />
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Track"
+        android:layout_below="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Track" />
+
+    <TextView
+        android:id="@+id/TrackValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="340dp"
+        android:layout_toRightOf="@+id/Track"
+        android:text="@string/TrackValue" />
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Country"
+        android:layout_below="@+id/Track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Country" />
+
+    <TextView
+        android:id="@+id/CountryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="380dp"
+        android:layout_toRightOf="@+id/Track"
+        android:text="@string/CountryValue" />
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Email"
+        android:layout_below="@+id/Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email" />
+
+    <TextView
+        android:id="@+id/EmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="420dp"
+        android:layout_toRightOf="@+id/Email"
+        android:text="@string/EmailValue" />
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/PhoneNumber"
+        android:layout_below="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PhoneNumber" />
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Slack"
+        android:layout_below="@+id/PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SlackUserName" />
+    <TextView
+        android:id="@+id/PhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="466dp"
+        android:layout_toRightOf="@+id/PhoneNumber"
+        android:text="@string/PhoneNumberValue" />
+
+    <TextView
+        android:id="@+id/PhoneNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="506dp"
+        android:layout_toRightOf="@+id/PhoneNumber"
+        android:text="@string/SlackUserNameValue" />
+</RelativeLayout>
